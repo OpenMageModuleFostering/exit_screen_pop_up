@@ -1,0 +1,16 @@
+{
+    "name": "OpenMageModuleFostering/Exit_Screen_Pop_Up",
+    "type": "magento-module",
+    "license": "Massachusetts-Institute-of-Technology-License-(MITL)",
+    "homepage": "",
+    "description": "Lure your customers into staying at your store while they intent to exit by offering exciting offers.",
+    "authors": [
+    {
+        "name": "Vsourz Digital",
+        "email": "mehul@vsourz.com"
+    }
+],
+    "suggest": {
+        "magento-hackathon/magento-composer-installer": "*"
+    }
+}
