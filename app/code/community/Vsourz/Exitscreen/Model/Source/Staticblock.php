@@ -4,7 +4,8 @@ class Vsourz_Exitscreen_Model_Source_Staticblock
 	protected $_options;
 	public function toOptionArray()
 	{
-		if (!$this->_options) {
+		if(!$this->_options)
+		{
 			$this->_options = Mage::getResourceModel('cms/block_collection')
 			->load()
 			->toOptionArray();

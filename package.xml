@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package>
     <name>Exit_Screen_Pop_Up</name>
-    <version>1.0.1</version>
+    <version>1.0.2</version>
     <stability>stable</stability>
     <license uri="http://opensource.org/licenses/MIT">Massachusetts Institute of Technology License (MITL)</license>
     <channel>community</channel>
@@ -41,11 +41,11 @@ How to use?&#xD;
 7. Cookie Interval : Total time (In Hours) until cookie expires. This will enable admin to control the time until which next Pop-up shouldn't appear.&#xD;
 8. Delay Pop-up : Total time (In Minutes) after which Pop-up should appear&#xD;
 9. Pop-up Width and Height : Enter width or height in pixel</description>
-    <notes>Bug Fixes for layout reference and width of popup</notes>
+    <notes>- Some changes on js</notes>
     <authors><author><name>Vsourz Digital</name><user>MAG002979323</user><email>mehul@vsourz.com</email></author></authors>
-    <date>2015-08-03</date>
-    <time>05:52:15</time>
-    <contents><target name="magecommunity"><dir name="Vsourz"><dir name="Exitscreen"><dir name="Block"><file name="Exitscreen.php" hash="ac6fac27feca2283e85a9cc617145e2e"/></dir><dir name="Helper"><file name="Data.php" hash="c715b899d4a3638742ed9da729d93c1c"/></dir><dir name="Model"><dir name="Source"><file name="Page.php" hash="73f8108405de6f8b9f8151a9e7612340"/><file name="Staticblock.php" hash="5a16c5041a793dd8c4fe6f9c0d2da437"/><file name="Truefalse.php" hash="e81f8d418ce09a31de8f97b779b56516"/></dir></dir><dir name="data"><dir name="exitscreen_setup"><file name="data-install-0.1.0.php" hash="c90adfc903da6cef3d229130909ea599"/></dir></dir><dir name="etc"><file name="adminhtml.xml" hash="0d34d694b85cfdd9404222fa19a1562c"/><file name="config.xml" hash="3135feaa79eccd12da23382b70da7403"/><file name="system.xml" hash="4dc71c4926a1747b38e0069fa1630c66"/></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Vsourz_Exitscreen.xml" hash="c04d7aedee84d179226f7c69c1ff6d28"/></dir></target><target name="magedesign"><dir name="frontend"><dir name="base"><dir name="default"><dir name="layout"><dir name="vsourz"><file name="exitscreen.xml" hash="7fc1a83481816e3b602d7e9aec1d6748"/></dir></dir><dir name="template"><dir name="vsourz"><file name="exitscreen.phtml" hash="3f410c1b21f609216687ec2a37052406"/></dir></dir></dir></dir></dir></target><target name="mageskin"><dir name="frontend"><dir name="base"><dir name="default"><dir name="css"><dir name="exitscreen"><file name="exitpopup.css" hash="fbb1a559c25dab0094bac16fbf863ea7"/></dir></dir><dir name="js"><dir name="exitscreen"><file name="exitpopup.js" hash="12fcd894301965a86fd825291969d32a"/><file name="jquery-1.10.2.min.js" hash="628072e7212db1e8cdacb22b21752cda"/></dir></dir></dir></dir></dir></target></contents>
+    <date>2015-09-08</date>
+    <time>10:50:55</time>
+    <contents><target name="magecommunity"><dir name="Vsourz"><dir name="Exitscreen"><dir name="Block"><file name="Exitscreen.php" hash="ac6fac27feca2283e85a9cc617145e2e"/></dir><dir name="Helper"><file name="Data.php" hash="c715b899d4a3638742ed9da729d93c1c"/></dir><dir name="Model"><dir name="Source"><file name="Page.php" hash="b6972b249ecb7df55529d726d91c03f0"/><file name="Staticblock.php" hash="635fc802b75932204903f9ed9c87fc22"/><file name="Truefalse.php" hash="e81f8d418ce09a31de8f97b779b56516"/></dir></dir><dir name="data"><dir name="exitscreen_setup"><file name="data-install-0.1.0.php" hash="c90adfc903da6cef3d229130909ea599"/></dir></dir><dir name="etc"><file name="adminhtml.xml" hash="0d34d694b85cfdd9404222fa19a1562c"/><file name="config.xml" hash="3135feaa79eccd12da23382b70da7403"/><file name="system.xml" hash="4dc71c4926a1747b38e0069fa1630c66"/></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Vsourz_Exitscreen.xml" hash="c04d7aedee84d179226f7c69c1ff6d28"/></dir></target><target name="magedesign"><dir name="frontend"><dir name="base"><dir name="default"><dir name="layout"><dir name="vsourz"><file name="exitscreen.xml" hash="7fc1a83481816e3b602d7e9aec1d6748"/></dir></dir><dir name="template"><dir name="vsourz"><file name="exitscreen.phtml" hash="a3b54903d40b0fab14594dc0d384fe30"/></dir></dir></dir></dir></dir></target><target name="mageskin"><dir name="frontend"><dir name="base"><dir name="default"><dir name="css"><dir name="exitscreen"><file name="exitpopup.css" hash="fbb1a559c25dab0094bac16fbf863ea7"/></dir></dir><dir name="js"><dir name="exitscreen"><file name="exitpopup.js" hash="12fcd894301965a86fd825291969d32a"/><file name="jquery-1.10.2.min.js" hash="628072e7212db1e8cdacb22b21752cda"/></dir></dir></dir></dir></dir></target></contents>
     <compatible/>
     <dependencies><required><php><min>5.1.0</min><max>6.0.0</max></php></required></dependencies>
 </package>

@@ -7,7 +7,6 @@ $showPop = $helper->showPopUp();
 $height = $helper->getHeight();
 $width = $helper->getWidth();
 $blockTitle = $helper->getBlockTitle();
- 
 
 if($showPop == "Y"):
 ?><div class="outer-bg">&nbsp;</div>
@@ -19,29 +18,25 @@ if($showPop == "Y"):
 
 <script type="text/javascript">
 jQuery(document).ready(function($){
+	 jQuery(document).bind("mouseleave", function(e){
+		if (e.pageY - jQuery(window).scrollTop() <= 1 || e.pageY - jQuery(window).scrollTop() >= jQuery(window).height()){
+			//console.log(e.pageY);
+			if(getCookie("delay")!="Y"){
+				if(getCookie("exitscreen")!="Y"){
+					$('.outer-bg').fadeIn();
+					$('.pop-up').addClass('open');						
+					setCookie("exitscreen","Y",<?php echo $cookieExpire ?>);
+				}
+			}			
+		}
+	 });
 	addEvent(window,"load",function(e){
 		// checks if cookie is set for delay
 		if(getCookie("delay")!="Y"){
 			// sets delay for displaying pop-up
 			setCookie("delay","Y",<?php echo $delay; ?>);
 		}
-		addEvent(document, "mouseout", function(e){
-			e = e ? e : window.event;
-			var from = e.relatedTarget || e.toElement;
-			if (!from || from.nodeName == "HTML"){
-				// stop your drag event here
-				// for now we can just use an alert
-				if(getCookie("delay")!="Y"){
-					if(getCookie("exitscreen")!="Y"){
-						$('.outer-bg').fadeIn();
-						$('.pop-up').addClass('open');						
-						setCookie("exitscreen","Y",<?php echo $cookieExpire ?>);
-					}
-				}
-			}
-		});
-	});
-	
+	});	
 	// Close popup
 	jQuery('.pop-up #close').click(function(){
 		jQuery('.outer-bg').fadeOut();
