@@ -32,7 +32,7 @@ class Vsourz_Exitscreen_Helper_Data extends Mage_Core_Helper_Abstract{
 	}
 	public function getHeight(){
 		$height = Mage::getStoreConfig('exitscreen/settings/height');
-		if($height = "auto"){
+		if($height == "auto"){
 			return $height;
 		}
 		else{
@@ -41,6 +41,11 @@ class Vsourz_Exitscreen_Helper_Data extends Mage_Core_Helper_Abstract{
 	}
 	public function getWidth(){
 		$width = Mage::getStoreConfig('exitscreen/settings/width');
-		return $width."px";
+		if($width == "auto"){
+			return $width;
+		}
+		else{
+			return $width."px";
+		}
 	}
 }

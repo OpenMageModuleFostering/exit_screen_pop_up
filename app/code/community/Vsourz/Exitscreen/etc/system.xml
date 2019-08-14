@@ -83,7 +83,7 @@
 						</delay>
 						<width translate="label">
                             <label>Pop-Up Width</label>
-							<comment><![CDATA[Width of POP-UP window in px]]></comment>
+							<comment><![CDATA[Width of POP-UP window in px. Enter <strong>auto</strong> for automatic width]]></comment>
                             <frontend_type>text</frontend_type>
                             <sort_order>60</sort_order>
                             <show_in_default>1</show_in_default>
